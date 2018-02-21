@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { graphql } from 'react-apollo';
 import SearchFlightsQuery from './searchFlightsQuery';
+import Card from './../card/Card'
 
 export const Flights = ({data: { allFlights, loading, refetch }}) => {
   return (
@@ -11,9 +12,9 @@ export const Flights = ({data: { allFlights, loading, refetch }}) => {
             <p>Loading...</p>
           </div>
         :
-          <div>
-            {JSON.stringify(allFlights, null, 2)}
-          </div>
+          allFlights.edges.map(({ node }) => (
+            <Card key={`card${node.id}`} node={node} />
+          ))
       }
     </Fragment>
   );
