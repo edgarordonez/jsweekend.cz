@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <h1>React</h1>
+        <h1>jsweekend.cz | kiwi.com</h1>
       </ApolloProvider>
     );
   }

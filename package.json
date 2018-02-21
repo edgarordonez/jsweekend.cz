@@ -6,6 +6,7 @@
     "apollo-client-preset": "^1.0.8",
     "graphql": "0.13.0",
     "graphql-tag": "^2.8.0",
+    "muicss": "^0.9.36",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
