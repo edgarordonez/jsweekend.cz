@@ -52,6 +52,10 @@ const SearchFlightsQuery = gql`
                 name
               }
             }
+          },
+          price {
+            amount,
+            currency
           }
         }
       }

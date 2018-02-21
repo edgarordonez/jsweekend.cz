@@ -1,15 +1,49 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Container from 'muicss/lib/react/container';
+import styled from 'styled-components';
 import Appbar from 'muicss/lib/react/appbar';
+import Row from 'muicss/lib/react/row';
+import Col from 'muicss/lib/react/col';
 import { Search, FlightsWrapper } from './../../components';
+
+const Wrapper = styled.div`
+  .appbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000000;
+    background-color: #FFFFFF;
+
+    img {
+      width: auto;
+      height: 40px;
+      margin: 10px;
+    }
+  }
+
+  .form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+
+    @media(max-width: 720px) {
+      margin: 2em 0;
+      
+      form {
+        width: 100%;
+      }
+    }
+  }
+`;
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      searchFields: null,
-    }
+      searchFields: null
+    };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -20,13 +54,28 @@ class App extends Component {
 
   render() {
     return (
-      <Fragment>
-        <Appbar></Appbar>
+      <Wrapper>
+        <Appbar className="appbar mui--z1">
+          <img src="https://www.kiwi.com/images/logos/kiwicom/navbar@2x.png?v=1" alt=""/>
+          <small>jsweekend.cz</small>
+        </Appbar>
         <Container>
-          <Search handleSubmit={this.handleSubmit} />
-          {this.state.searchFields ? <FlightsWrapper fields={this.state.searchFields} /> : <p>Search a flight on kiwi.com</p>}
+          <Row>
+            <Col md="12" className="form-content">
+              <Search handleSubmit={this.handleSubmit} />
+            </Col>
+          </Row>
+          <Row>
+            <Col md="12">
+              {
+                this.state.searchFields ? (
+                  <FlightsWrapper fields={this.state.searchFields} />
+                ) : null
+              }
+            </Col>
+          </Row>
         </Container>
-      </Fragment>
+      </Wrapper>
     );
   }
 }
