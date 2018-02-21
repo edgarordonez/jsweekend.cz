@@ -1,7 +1,7 @@
 import Search from './search/Search';
-import Flights from './flights/Flights';
+import FlightsWrapper from './flights/Flights';
 
 export {
   Search,
-  Flights
+  FlightsWrapper,
 }

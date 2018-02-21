@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Container from 'muicss/lib/react/container';
 import Appbar from 'muicss/lib/react/appbar';
-import { Search, Flights } from './../../components';
+import { Search, FlightsWrapper } from './../../components';
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class App extends Component {
         <Appbar></Appbar>
         <Container>
           <Search handleSubmit={this.handleSubmit} />
-          {this.state.searchFields ? <Flights fields={this.state.searchFields} /> : <p>Search a flight on kiwi.com</p>}
+          {this.state.searchFields ? <FlightsWrapper fields={this.state.searchFields} /> : <p>Search a flight on kiwi.com</p>}
         </Container>
       </Fragment>
     );
