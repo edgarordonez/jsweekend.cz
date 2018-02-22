@@ -19,7 +19,7 @@ const SearchFlightsQuery = gql`
       }, 
       options: {
         currency: EUR, 
-        locale: es_ES
+        locale: en_GB
       },
       first: $ITEMS_PER_PAGE
     ) {

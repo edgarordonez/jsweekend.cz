@@ -1,9 +1,9 @@
-import Search from './search/Search';
-import FlightsWrapper from './flights/Flights';
 import Card from './card/Card';
+import SearchWrapper from './search/Search';
+import FlightsWrapper from './flights/Flights';
 
 export {
-  Search,
   Card,
+  SearchWrapper,
   FlightsWrapper,
 }

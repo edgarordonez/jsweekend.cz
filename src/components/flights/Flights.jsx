@@ -31,10 +31,10 @@ const Spinner = styled.div`
       transform: rotate(0deg);
     }
     50% {
-      transform: rotate(50deg);
+      transform: rotate(180deg);
     }
     100% {
-      transform: rotate(100deg);
+      transform: rotate(360deg);
     }
   }
 `;
@@ -61,7 +61,7 @@ export const Flights = ({ allFlights, loading, loadMoreFlights }) => {
                 style={{ backgroundColor: '#54B8A5' }}
               >
                 Load more
-            </Button>
+              </Button>
             </Col>
           </Row>
         )}
