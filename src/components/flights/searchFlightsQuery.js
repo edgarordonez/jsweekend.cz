@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 
 const SearchFlightsQuery = gql`
-  query SearchFlights($from: String, $to: String, $date: Date) {
+  query SearchFlights($from: String, $to: String, $date: Date, $ITEMS_PER_PAGE: Int) {
     allFlights(
       search: {
         from: {
@@ -20,7 +20,8 @@ const SearchFlightsQuery = gql`
       options: {
         currency: EUR, 
         locale: es_ES
-      }
+      },
+      first: $ITEMS_PER_PAGE
     ) {
       edges {
         node {
