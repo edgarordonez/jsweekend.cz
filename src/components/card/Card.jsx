@@ -42,7 +42,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Card = ({ node }) => (
+export const Card = ({ node }) => (
   <Wrapper>
     <div key={node.id} className="card mui--divider-bottom mui--z3">
       <div className="airline-group">

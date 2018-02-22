@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
+import { withApollo } from 'react-apollo';
 import PropTypes from 'prop-types';
 import autoBind from 'react-autobind';
-import { withApollo } from 'react-apollo';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import Form from 'muicss/lib/react/form';
@@ -45,7 +45,7 @@ export class Search extends PureComponent {
         },
         variables: { search: this.from.controlEl.value }
       });
-  
+
       if (this.from.controlEl.value === '') {
         this.setState({
           from: [],
@@ -71,7 +71,7 @@ export class Search extends PureComponent {
         },
         variables: { search: this.to.controlEl.value }
       });
-  
+
       if (this.to.controlEl.value === '') {
         this.setState({
           to: [],
@@ -179,5 +179,5 @@ Search.propTypes = {
   client: PropTypes.any,
 };
 
-const SearchWrapper = withApollo(Search)
+const SearchWrapper = withApollo(Search);
 export default SearchWrapper;

@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import autoBind from 'react-autobind';
-import Container from 'muicss/lib/react/container';
 import styled from 'styled-components';
-import Appbar from 'muicss/lib/react/appbar';
+import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
+import Appbar from 'muicss/lib/react/appbar';
 import { SearchWrapper, FlightsWrapper } from './../../components';
 
 const Wrapper = styled.div`
@@ -109,7 +109,9 @@ class App extends Component {
             </Row>
           </Container>
           <footer>
-            <a href="https://github.com/edgarordonez/jsweekend.cz">kiwi.com jsweekend.cz | Edgar Ordóñez Rodríguez</a>
+            <a href="https://github.com/edgarordonez/jsweekend.cz">
+              kiwi.com jsweekend.cz | Edgar Ordóñez Rodríguez
+            </a>
           </footer>
         </Wrapper>
       </Fragment>
