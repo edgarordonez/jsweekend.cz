@@ -56,11 +56,14 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1"
+    "enzyme-adapter-react-16": "^1.1.1",
+    "gh-pages": "^1.1.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -104,5 +107,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "homepage": "http://edgarordonez.github.io/jsweekend.cz"
 }
