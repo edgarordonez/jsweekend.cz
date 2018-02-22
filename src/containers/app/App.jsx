@@ -7,6 +7,17 @@ import Col from 'muicss/lib/react/col';
 import { Search, FlightsWrapper } from './../../components';
 
 const Wrapper = styled.div`
+  Button {
+    color: #ffffff;
+    background-color: #54b8a5;
+  }
+
+  input:focus,
+  input:focus~label {
+    color: #54b8a5;
+    border-color: #54b8a5;
+  }
+
   .appbar {
     display: flex;
     justify-content: flex-start;
@@ -56,7 +67,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Appbar className="appbar mui--z1">
-          <img src="https://www.kiwi.com/images/logos/kiwicom/navbar@2x.png?v=1" alt=""/>
+          <img src="https://www.kiwi.com/images/logos/kiwicom/navbar@2x.png?v=1" alt="kiwi.com" />
           <small>jsweekend.cz</small>
         </Appbar>
         <Container>

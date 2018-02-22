@@ -43,9 +43,10 @@ it('renders without crashing', () => {
       ]
     },
     loading: true,
-    refetch: (event) => event
+    loadMoreFlights: (event) => event
   }
-  const flights = shallow(<Flights data={data} />);
+
+  const flights = shallow(<Flights allFlights={data.allFlights} loading={data.loading} loadMoreFlights={data.loadMoreFlights} />);
 
   expect(flights).toMatchSnapshot();
 });

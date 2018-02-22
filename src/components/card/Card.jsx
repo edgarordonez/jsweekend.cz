@@ -50,18 +50,18 @@ const Card = ({ node }) => (
           node.airlines.map((airline, index) => (
             <div key={`airline-${node.id}-${index}`} className="airline">
               <img src={airline.logoUrl} alt={airline.name} />
-              <small>{ airline.name }</small>
+              <small>{airline.name}</small>
             </div>
           ))
         }
       </div>
       <div className="flight-detail">
         <p>
-          { node.departure.airport.city.name } &#8594; { node.arrival.airport.city.name }
-          <small>{ new Date(node.departure.localTime).toString().split("GMT")[0] }</small>         
+          {node.departure.airport.city.name} &#8594; {node.arrival.airport.city.name}
+          <small>{new Date(node.departure.localTime).toString().split("GMT")[0]}</small>
         </p>
         <h2>
-          { node.price.amount } €
+          {node.price.amount} €
         </h2>
       </div>
     </div>

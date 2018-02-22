@@ -5,50 +5,48 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    data={
+    allFlights={
         Object {
-            "allFlights": Object {
-              "edges": Array [
-                Object {
-                  "node": Object {
-                    "airlines": Array [
-                      Object {
-                        "code": "VY",
-                        "logoUrl": "https://images.kiwi.com/airlines/64/VY.png",
-                        "name": "Vueling",
-                      },
-                    ],
-                    "arrival": Object {
-                      "airport": Object {
-                        "city": Object {
-                          "name": "Londres",
-                        },
-                        "locationId": "LTN",
-                        "name": "Aeropuerto de Londres-Luton",
-                        "slug": "aeropuerto-de-londres-luton-londres-reino-unido",
-                      },
+            "edges": Array [
+              Object {
+                "node": Object {
+                  "airlines": Array [
+                    Object {
+                      "code": "VY",
+                      "logoUrl": "https://images.kiwi.com/airlines/64/VY.png",
+                      "name": "Vueling",
                     },
-                    "departure": Object {
-                      "airport": Object {
-                        "city": Object {
-                          "name": "Barcelona",
-                        },
-                        "locationId": "BCN",
-                        "name": "Aeropuerto de Barcelona-El Prat",
-                        "slug": "aeropuerto-de-barcelona-el-prat-barcelona-espana",
+                  ],
+                  "arrival": Object {
+                    "airport": Object {
+                      "city": Object {
+                        "name": "Londres",
                       },
-                      "localTime": "2018-02-23T18:10:00.000Z",
-                      "time": "2018-02-23T17:10:00.000Z",
+                      "locationId": "LTN",
+                      "name": "Aeropuerto de Londres-Luton",
+                      "slug": "aeropuerto-de-londres-luton-londres-reino-unido",
                     },
-                    "id": "RmxpZ2h0OjMzNDEwNjkwMw==",
                   },
+                  "departure": Object {
+                    "airport": Object {
+                      "city": Object {
+                        "name": "Barcelona",
+                      },
+                      "locationId": "BCN",
+                      "name": "Aeropuerto de Barcelona-El Prat",
+                      "slug": "aeropuerto-de-barcelona-el-prat-barcelona-espana",
+                    },
+                    "localTime": "2018-02-23T18:10:00.000Z",
+                    "time": "2018-02-23T17:10:00.000Z",
+                  },
+                  "id": "RmxpZ2h0OjMzNDEwNjkwMw==",
                 },
-              ],
-            },
-            "loading": true,
-            "refetch": [Function],
+              },
+            ],
           }
     }
+    loadMoreFlights={[Function]}
+    loading={true}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -60,23 +58,25 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
-      "children": <div>
-        <p>
-                Loading...
-        </p>
-</div>,
+      "children": <styled.div>
+        <img
+                alt=""
+                src="/spinner.jpg"
+        />
+</styled.div>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": <p>
-          Loading...
-</p>,
+        "children": <img
+          alt=""
+          src="/spinner.jpg"
+/>,
       },
       "ref": null,
       "rendered": Object {
@@ -84,37 +84,40 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Loading...",
+          "alt": "",
+          "src": "/spinner.jpg",
         },
         "ref": null,
-        "rendered": "Loading...",
-        "type": "p",
+        "rendered": null,
+        "type": "img",
       },
-      "type": "div",
+      "type": [Function],
     },
-    "type": Symbol(react.fragment),
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
-        "children": <div>
-          <p>
-                    Loading...
-          </p>
-</div>,
+        "children": <styled.div>
+          <img
+                    alt=""
+                    src="/spinner.jpg"
+          />
+</styled.div>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": <p>
-            Loading...
-</p>,
+          "children": <img
+            alt=""
+            src="/spinner.jpg"
+/>,
         },
         "ref": null,
         "rendered": Object {
@@ -122,15 +125,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Loading...",
+            "alt": "",
+            "src": "/spinner.jpg",
           },
           "ref": null,
-          "rendered": "Loading...",
-          "type": "p",
+          "rendered": null,
+          "type": "img",
         },
-        "type": "div",
+        "type": [Function],
       },
-      "type": Symbol(react.fragment),
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
