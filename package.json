@@ -41,6 +41,7 @@
     "raf": "3.4.0",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
+    "react-autobind": "^1.0.6",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
     "style-loader": "0.19.0",
