@@ -6,6 +6,7 @@ import Col from 'muicss/lib/react/col';
 import Button from 'muicss/lib/react/button';
 import SearchFlightsQuery from './searchFlightsQuery';
 import Card from './../card/Card';
+import spinner from './../../assets/spinner.jpg';
 
 const Wrapper = styled.div`
   .load-more-content {
@@ -45,7 +46,7 @@ export const Flights = ({ allFlights, loading, loadMoreFlights }) => {
     <Wrapper>
       {loading ? (
         <Spinner>
-          <img src="/spinner.jpg" alt="" />
+          <img src={spinner} alt="loading" />
         </Spinner>
       ) : (
           <Row>
