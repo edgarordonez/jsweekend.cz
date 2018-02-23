@@ -61,7 +61,7 @@ export const Card = ({ node }) => (
           <small>{new Date(node.departure.localTime).toString().split("GMT")[0]}</small>
         </p>
         <h2>
-          {node.price.amount} €
+          {node.price.amount.toLocaleString('es-ES', {style: 'currency', currency: 'EUR'})}
         </h2>
       </div>
     </div>
